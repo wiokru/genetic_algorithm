@@ -69,7 +69,7 @@ string DNA::crossover( DNA o2){
 
 void DNA::mutate(){
     int check = rand()%100;
-    if (check % 13==0){ //jesli wylosuje 13, to nastapi mutacja
+    if (check % 13==0){ //jesli wylosuje wielokrotnosc 13, to nastapi mutacja
         //cout<<"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<endl;
         string alphabet = "ABCDEFGHIJKLMNOPRSTUWXYZabcdefghijklmnoprstuwxyz. ";
         int index_to_change = rand()%genotyp.length();
